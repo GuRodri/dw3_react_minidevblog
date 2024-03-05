@@ -6,7 +6,7 @@ const Footer = () => {
     <table>
         <tr>
             <th>
-                Marca 
+                Marca
             </th>
             <th>
                 Endereço
@@ -14,14 +14,15 @@ const Footer = () => {
             <th>
                 Contato
             </th>
-        </tr> 
+        </tr>
         <tr>
             <td>React F3M</td>
-            <td>Rua da Educação, 120</td>
-            <td>f240@fatec.sp.go.br</td>
-        </tr>  
-    </table>   
-    </>  )
+            <td>Rua Da Educação, 120</td>
+            <td>f240@fatec.sp.gov.br</td>
+        </tr>
+    </table>
+    </>
+  )
 }
 
 export default Footer
