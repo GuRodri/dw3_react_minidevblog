@@ -6,7 +6,7 @@ const FormHooks = () => {
 
     const [list] = useState(['Leticia', 'Enzo', 'Kayro', 'Gustavo'])
     const [number, setNumber] = useState(15)
-    const [user] = useState(
+    const [user, setUser] = useState(
         [
             { id: 1, nome: 'Jose Carlos', idade: 44 },
             { id: 2, nome: 'Maria Rosa', idade: 25 },
@@ -18,6 +18,14 @@ const FormHooks = () => {
             { id: 8, nome: 'Pedro Lucas', idade: 37 }
         ]
     )
+
+    const deleteRandonUser = ()=>{
+        const randomNumber = Math.floor(Math.random() * user.length)
+        setUser((prevUsers) => {
+            console.log(prevUsers);
+             return prevUsers.filter((user) => randomNumber !== user.id)
+        })
+    }
 
     return (
         <>
@@ -62,6 +70,7 @@ const FormHooks = () => {
 
 
                 </table>
+                <button onClick={deleteRandonUser}>Excluir Randomicamente</button>
             </div>
         </>
     )
