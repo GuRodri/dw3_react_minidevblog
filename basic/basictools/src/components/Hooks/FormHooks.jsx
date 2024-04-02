@@ -19,11 +19,11 @@ const FormHooks = () => {
         ]
     )
 
-    const deleteRandonUser = ()=>{
+    const deleteRandonUser = () => {
         const randomNumber = Math.floor(Math.random() * user.length)
         setUser((prevUsers) => {
             console.log(prevUsers);
-             return prevUsers.filter((user) => randomNumber !== user.id)
+            return prevUsers.filter((user) => randomNumber !== user.id)
         })
     }
 
